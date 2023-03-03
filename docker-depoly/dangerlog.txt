@@ -31,4 +31,7 @@ i immediately close the fd to the server. Then my proxy can load youtube page or
     be some javascrit or something else request some resource.
 
 
+Exception:
 
+    For sockets, berkey sockets may return -1 like getaddrinfo, bind, send, receive function. we return immediately and let caller function to close the resources.
+    I set the sigpipe signal to ignore in case the main thread died.

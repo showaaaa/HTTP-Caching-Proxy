@@ -526,3 +526,113 @@ Note: enter handleGet, cacheres nullptr
 15: Responding "HTTP/1.1 200 OK"
 16: "CONNECT play.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:59:07 2023
 16: Responding "HTTP/1.1 200 OK"
+0: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:24 2023
+0: Responding "HTTP/1.1 200 OK"
+1: "GET http://www.columbia.edu/~fdc/sample.html HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:24 2023
+Note: enter handleGet, cacheres nullptr
+1: not in cache
+1: Requesting "GET http://www.columbia.edu/~fdc/sample.html HTTP/1.1" from www.columbia.edu
+1: Received "HTTP/1.1 200 OK" from www.columbia.edu
+1: Responding "HTTP/1.1 200 OK"
+1: cached, no expires time
+2: "GET http://www.columbia.edu/~fdc/picture-of-something.jpg HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:25 2023
+Note: enter handleGet, cacheres nullptr
+2: not in cache
+2: Requesting "GET http://www.columbia.edu/~fdc/picture-of-something.jpg HTTP/1.1" from www.columbia.edu
+2: Received "HTTP/1.1 200 OK" from www.columbia.edu
+2: Responding "HTTP/1.1 200 OK"
+2: cached, no expires time
+3: "GET http://www.columbia.edu/favicon.ico HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:25 2023
+Note: enter handleGet, cacheres nullptr
+3: not in cache
+3: Requesting "GET http://www.columbia.edu/favicon.ico HTTP/1.1" from www.columbia.edu
+3: Received "HTTP/1.1 200 OK" from www.columbia.edu
+3: Responding "HTTP/1.1 200 OK"
+3: cached, no expires time
+4: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:26 2023
+4: Responding "HTTP/1.1 200 OK"
+5: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:30 2023
+6: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:30 2023
+5: Responding "HTTP/1.1 200 OK"
+6: Responding "HTTP/1.1 200 OK"
+5: Tunnel closed
+7: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:31 2023
+8: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:31 2023
+8: Responding "HTTP/1.1 200 OK"
+7: Responding "HTTP/1.1 200 OK"
+10: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:31 2023
+11: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:31 2023
+9: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:31 2023
+13: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:31 2023
+14: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:31 2023
+10: Responding "HTTP/1.1 200 OK"
+11: Responding "HTTP/1.1 200 OK"
+13: Responding "HTTP/1.1 200 OK"
+9: Responding "HTTP/1.1 200 OK"
+12: Responding "HTTP/1.1 200 OK"
+14: Responding "HTTP/1.1 200 OK"
+12: Tunnel closed
+8: Tunnel closed
+9: Tunnel closed
+10: Tunnel closed
+14: Tunnel closed
+13: Tunnel closed
+4: Tunnel closed
+6: Tunnel closed
+7: Tunnel closed
+11: Tunnel closed
+0: Tunnel closed
+15: "GET http://www.columbia.edu/~fdc/sample.html HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:36 2023
+Note: found in cache
+15: in cache, valid
+15: Responding "HTTP/1.1 200 OK"
+16: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:36 2023
+16: Responding "HTTP/1.1 200 OK"
+17: Responding "HTTP/1.1 200 OK"
+18: "GET http://www.columbia.edu/~fdc/picture-of-something.jpg HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:36 2023
+Note: found in cache
+18: in cache, valid
+18: Responding "HTTP/1.1 200 OK"
+19: "GET http://www.columbia.edu/favicon.ico HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:36 2023
+Note: found in cache
+19: in cache, valid
+19: Responding "HTTP/1.1 200 OK"
+17: Tunnel closed
+23: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:36 2023
+20: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:36 2023
+21: Responding "HTTP/1.1 200 OK"
+22: Responding "HTTP/1.1 200 OK"
+20: Responding "HTTP/1.1 200 OK"
+23: Tunnel closed
+20: Tunnel closed
+24: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:41 2023
+24: Responding "HTTP/1.1 200 OK"
+25: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:51 2023
+26: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:51 2023
+25: Responding "HTTP/1.1 200 OK"
+26: Responding "HTTP/1.1 200 OK"
+26: Tunnel closed
+27: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:52 2023
+Note: enter handleGet, cacheres nullptr
+27: not in cache
+27: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+27: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+28: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:12:57 2023
+Note: enter handleGet, cacheres nullptr
+28: not in cache
+28: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+28: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+29: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:13:26 2023
+Note: enter handleGet, cacheres nullptr
+29: not in cache
+29: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+29: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+27: Responding "HTTP/1.1 200 OK"
+27: not cacheable because nostore or private response header field
+30: "GET http://www.httpwatch.com/favicon.ico HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 23:13:26 2023
+Note: enter handleGet, cacheres nullptr
+30: not in cache
+30: Requesting "GET http://www.httpwatch.com/favicon.ico HTTP/1.1" from www.httpwatch.com
+30: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+28: Responding "HTTP/1.1 200 OK"
+28: not cacheable because nostore or private response header field
