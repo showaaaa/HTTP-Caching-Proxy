@@ -258,3 +258,271 @@ Note: found in cache
 68 Tunnel closed
 69 Tunnel closed
 29 Tunnel closed
+0: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:19 2023
+0: Responding "HTTP/1.1 200 OK"
+1: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:19 2023
+1: Responding "HTTP/1.1 200 OK"
+2: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:36 2023
+2: Responding "HTTP/1.1 200 OK"
+3: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:37 2023
+3: Responding "HTTP/1.1 200 OK"
+4: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:37 2023
+4: Responding "HTTP/1.1 200 OK"
+5: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:38 2023
+5: Responding "HTTP/1.1 200 OK"
+7: "CONNECT play.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:39 2023
+7: Responding "HTTP/1.1 200 OK"
+6: "CONNECT play.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:39 2023
+6: Responding "HTTP/1.1 200 OK"
+8: "CONNECT i.ytimg.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:37:59 2023
+8: Responding "HTTP/1.1 200 OK"
+9: "CONNECT rr1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+10: "CONNECT rr1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+9: Responding "HTTP/1.1 200 OK"
+10: Responding "HTTP/1.1 200 OK"
+11: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+12: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+12: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+11: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+12: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+11: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+12: Responding "HTTP/1.1 200 OK"
+11: Responding "HTTP/1.1 200 OK"
+14: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+17: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+14: Responding "HTTP/1.1 200 OK"
+17: Responding "HTTP/1.1 200 OK"
+15: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+16: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:00 2023
+15: Responding "HTTP/1.1 200 OK"
+16: Responding "HTTP/1.1 200 OK"
+18: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:01 2023
+21: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:01 2023
+20: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:01 2023
+18: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+19: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:01 2023
+19: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+20: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+21: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+18: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+19: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+20: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+21: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+18: Responding "HTTP/1.1 200 OK"
+21: Responding "HTTP/1.1 200 OK"
+20: Responding "HTTP/1.1 200 OK"
+19: Responding "HTTP/1.1 200 OK"
+13: "CONNECT tpc.googlesyndication.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:01 2023
+23: "CONNECT accounts.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:01 2023
+25: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:01 2023
+13: Responding "HTTP/1.1 200 OK"
+23: Responding "HTTP/1.1 200 OK"
+25: Responding "HTTP/1.1 200 OK"
+24: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:02 2023
+24: Responding "HTTP/1.1 200 OK"
+26: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:02 2023
+26: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+26: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+26: Responding "HTTP/1.1 200 OK"
+27: "CONNECT rr3---sn-5ualdnze.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:02 2023
+27: Responding "HTTP/1.1 200 OK"
+28: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:02 2023
+28: Responding "HTTP/1.1 200 OK"
+29: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:02 2023
+29: Responding "HTTP/1.1 200 OK"
+30: "CONNECT jnn-pa.googleapis.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:02 2023
+30: Responding "HTTP/1.1 200 OK"
+31: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:03 2023
+31: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+31: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+31: Responding "HTTP/1.1 200 OK"
+32: "CONNECT www.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:03 2023
+32: Responding "HTTP/1.1 200 OK"
+33: "CONNECT r5---sn-vgqskns7.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:08 2023
+33: Responding "HTTP/1.1 200 OK"
+33 Tunnel closed
+34: "CONNECT www.googleadservices.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:12 2023
+34: Responding "HTTP/1.1 200 OK"
+38: "CONNECT www.gstatic.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:19 2023
+38: Responding "HTTP/1.1 200 OK"
+39: "CONNECT lh3.googleusercontent.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:20 2023
+39: Responding "HTTP/1.1 200 OK"
+14 Tunnel closed
+40: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:22 2023
+Note: enter handleGet, cacheres nullptr
+40: not in cache
+40: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
+40: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+41: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:22 2023
+Note: enter handleGet, cacheres nullptr
+41: not in cache
+40: Responding "HTTP/1.1 200 OK"
+40: cached, but requires re-validation41: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from detectportal.firefox.com
+41: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+16 Tunnel closed
+42: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:22 2023
+Note: found in cache
+Note: response has no-cache flag or max-age=0
+42: in cache, requires validation
+42: Responding "HTTP/1.1 200 OK"
+41: Responding "HTTP/1.1 200 OK"
+41: cached, but requires re-validation43: "CONNECT rr1---sn-5ualdnss.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:22 2023
+43: Responding "HTTP/1.1 200 OK"
+17 Tunnel closed
+44: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:22 2023
+Note: found in cache
+Note: response has no-cache flag or max-age=0
+44: in cache, requires validation
+44: Responding "HTTP/1.1 200 OK"
+45: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:22 2023
+45: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+45: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+46: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:23 2023
+Note: found in cache
+Note: response has no-cache flag or max-age=0
+46: in cache, requires validation
+46: Responding "HTTP/1.1 200 OK"
+45: Responding "HTTP/1.1 200 OK"
+47: "CONNECT safebrowsing.googleapis.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:23 2023
+47: Responding "HTTP/1.1 200 OK"
+47 Tunnel closed
+48: "CONNECT yt3.googleusercontent.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:24 2023
+48: Responding "HTTP/1.1 200 OK"
+49: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:38:24 2023
+49: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+49: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+49: Responding "HTTP/1.1 200 OK"
+0: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:03 2023
+0: Responding "HTTP/1.1 200 OK"
+1: "CONNECT rr3---sn-5ualdnze.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:05 2023
+1: Responding "HTTP/1.1 200 OK"
+2: "CONNECT i.ytimg.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:21 2023
+3: "CONNECT rr1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:21 2023
+2: Responding "HTTP/1.1 200 OK"
+4: "CONNECT rr1---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:21 2023
+3: Responding "HTTP/1.1 200 OK"
+4: Responding "HTTP/1.1 200 OK"
+5: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:22 2023
+6: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:22 2023
+5: Responding "HTTP/1.1 200 OK"
+6: Responding "HTTP/1.1 200 OK"
+7: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:22 2023
+8: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:22 2023
+7: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+8: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+7: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+8: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+7: Responding "HTTP/1.1 200 OK"
+8: Responding "HTTP/1.1 200 OK"
+10: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:23 2023
+10: Responding "HTTP/1.1 200 OK"
+12: "CONNECT jnn-pa.googleapis.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:23 2023
+12: Responding "HTTP/1.1 200 OK"
+14: "CONNECT www.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:24 2023
+14: Responding "HTTP/1.1 200 OK"
+15: "CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:25 2023
+15: Responding "HTTP/1.1 200 OK"
+11: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:25 2023
+11: Responding "HTTP/1.1 200 OK"
+18: "CONNECT rr4---sn-5ualdns6.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:25 2023
+17: "CONNECT rr4---sn-5ualdns6.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:25 2023
+15 Tunnel closed
+17: Responding "HTTP/1.1 200 OK"
+18: Responding "HTTP/1.1 200 OK"
+19: "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:25 2023
+Note: enter handleGet, cacheres nullptr
+19: not in cache
+19: Requesting "GET http://detectportal.firefox.com/canonical.html HTTP/1.1" from detectportal.firefox.com
+19: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+19: Responding "HTTP/1.1 200 OK"
+19: cached, but requires re-validation20: "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:26 2023
+Note: enter handleGet, cacheres nullptr
+20: not in cache
+20: Requesting "GET http://detectportal.firefox.com/success.txt?ipv4 HTTP/1.1" from detectportal.firefox.com
+20: Received "HTTP/1.1 200 OK" from detectportal.firefox.com
+20: Responding "HTTP/1.1 200 OK"
+20: cached, but requires re-validation16: "CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:26 2023
+16: Responding "HTTP/1.1 200 OK"
+17 Tunnel closed
+18 Tunnel closed
+21: "CONNECT rr4---sn-5ualdns6.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:40:29 2023
+21: Responding "HTTP/1.1 200 OK"
+21 Tunnel closed
+0: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:03 2023
+0: Responding "HTTP/1.1 200 OK"
+1: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:03 2023
+1: Responding "HTTP/1.1 200 OK"
+2: "CONNECT www.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:06 2023
+2: Responding "HTTP/1.1 200 OK"
+2 Tunnel closed
+3: "CONNECT www.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:07 2023
+3: Responding "HTTP/1.1 200 OK"
+3 Tunnel closed
+4: "CONNECT www.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:07 2023
+4: Responding "HTTP/1.1 200 OK"
+5: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:07 2023
+5: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+5: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+5: Responding "HTTP/1.1 200 OK"
+6: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:10 2023
+6: Responding "HTTP/1.1 200 OK"
+7: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:22 2023
+Note: enter handleGet, cacheres nullptr
+7: not in cache
+8: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:22 2023
+Note: enter handleGet, cacheres nullptr
+8: not in cache
+9: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+9: not in cache
+10: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+10: not in cache
+11: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+11: not in cache
+12: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+12: not in cache
+13: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+13: not in cache
+14: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+14: not in cache
+15: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+15: not in cache
+16: "GET http://dwihduihdauhdiuahiuhawudh/ HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+Note: enter handleGet, cacheres nullptr
+16: not in cache
+17: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:44:23 2023
+17: Responding "HTTP/1.1 200 OK"
+0: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:29 2023
+0: Responding "HTTP/1.1 200 OK"
+1: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:30 2023
+2: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:30 2023
+1: Responding "HTTP/1.1 200 OK"
+2: Responding "HTTP/1.1 200 OK"
+3: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:32 2023
+3: Responding "HTTP/1.1 200 OK"
+4: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:32 2023
+4: Responding "HTTP/1.1 200 OK"
+5: "CONNECT i.ytimg.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:33 2023
+5: Responding "HTTP/1.1 200 OK"
+8: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:34 2023
+8: Responding "HTTP/1.1 200 OK"
+10: "CONNECT www.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:34 2023
+10: Responding "HTTP/1.1 200 OK"
+9: "CONNECT www.gstatic.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:35 2023
+9: Responding "HTTP/1.1 200 OK"
+11: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:35 2023
+11: Responding "HTTP/1.1 200 OK"
+12: "CONNECT jnn-pa.googleapis.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:36 2023
+13: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:36 2023
+12: Responding "HTTP/1.1 200 OK"
+13: Responding "HTTP/1.1 200 OK"
+15: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:58:53 2023
+15: Responding "HTTP/1.1 200 OK"
+16: "CONNECT play.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 22:59:07 2023
+16: Responding "HTTP/1.1 200 OK"

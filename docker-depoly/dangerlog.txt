@@ -1,17 +1,34 @@
+
 Danger log:
 
-1 When we tested our proxy using the audio lecture files in the 568 class page, we could not open it and exit the program with a segmentation fault. Considering the consequence and running the program with Valgrind, we found that it is because the size of the entire response is too large. We naively used the primitive char array to store it and send it directly to the client at first. Then, we solved this problem by changing our design into storing the entire response in a vector. 
+1. After my proxy receive response from server and send it back to client, if the response contains content length, the client will send a sigpipe signal to my proxy.
+Then my proxy will be stuck at that while loop.
 
-2. Our proxy reads the client requests by using an accept function in a while loop and spawns a new thread for each request to execute the needed operation. However, when we finished opening a browser which means sending a new request for proxy to deal with, there are some remained mistaken messages that clients would send to our proxy, At the beginning, we would parse that request in a normal way and ready to create socket to connect with the origin server which may lead to the getaddrinfo function get into error and exit the whole program. We modified it by only returning the error and throws an exception.
+     I found i sent more data than the content length specify, then client close the connect. Then I refactor my send receive logic and use the len variable to send what i just received. 
 
-3. When we used multi-threading to handle each request, we give each of them a unique id. However, when we tested the CONNECT request, after it finished executing its whole process and logged with “Tunnel closed”, the log file recorded that the same id was closed multiple times. After we debugged it, we figured out that we did not use synchronization for the operation of adding id for each thread. 
+2. For cache part, i used read write lock. In get function, when there is no cached response, i just return nullptr in advance, which not enter the logic to unlock.
+Then my program stuck for next request.
 
-4. When we tested the validation of requests stored in the cache by using the provided website which can HTTP request without using docker, the current times and the expires time we manually typed in were not consistent and were not the same as what we expected. Then we searched on the Internet and found out it was because the mktime function could be affected by the Linux environment. After we run our program inside of the docker, this problem was not existing anymore.
+    i add unlock before this return.
 
-5. Exception:
-5.1 Socket:
-First, our proxy needs to work as a temporary server and waiting for the connection from the client to receive requests. When the proxy is creating the socket, binding it, listening and accepting the connection, those steps could fail. We handle that by checking the return value of each function. If it is failed, we would directly return it, check its return value and handle the problem in the upper-level function. Also, the same procedure would be done if our proxy got a failure in connecting to the origin server.
-5.2 HTTP protocol:
-a. 400 Bad Request: If our proxy receives a request from the client which does not contain the field “Host: ”, we would send the client directly with a 400 Bad Request response status code instead of sending this invalid request to the origin server.
-b. 502 Bad Gateway: If our proxy receives an invalid response from an origin server, we would send the client a 502 Bad Gateway response.
+
+3. For cache, i found my cached content is not same as what i store.
+
+    Since i create the Response object without new, the object is deconstruced when function return. Therefore, my cached content is not correct. 
+    I used new to make the content on heap.
+
+
+
+4. For connect method, after select return, if FD_ISSET(fd[i], &read_fds) return true for that certain fd, i call receive from that fd. If the received length is less than or equal to 0,
+i immediately close the fd to the server. Then my proxy can load youtube page or certain video page, but the video is always loading.
+
+    i don't know why. But when i delete the immediately close code, the video can play well.
+
+
+5. My thread number and sbuf number is set to 10 at the beginning. When configure my browser to use my proxy, when i visit youtube, soemtimes the page was stuck and super slow.
+
+    I increased the thread number and sbuf number to 100, the page was faster and not stuck. I found when i open youtube home page, there are many request occurred. I guess there might
+    be some javascrit or something else request some resource.
+
+
 

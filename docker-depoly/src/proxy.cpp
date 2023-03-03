@@ -11,7 +11,7 @@
 #define SBUFSIZE 200
 //#define MAXLINE 8192
 #define MAXLINE 65536
-#define CACHESIZE 20
+#define CACHESIZE 50
 
 Sbuf sbuf(SBUFSIZE);
 Log log;
@@ -523,12 +523,12 @@ void handleConnect(Request &request, int clientfd, Client_Info &info){
             if(FD_ISSET(fd[i], &read_fds)){
                 len = recv(fd[i], message, sizeof(message), 0);
                 if(len <= 0 ){
-                    //close(serverfd);
+                    
                     return;
                 }
                 else{
                     if(send(fd[1-i], message, len, 0) <= 0){
-                        //close(serverfd);
+                        
                         return;
                     }
                 }
