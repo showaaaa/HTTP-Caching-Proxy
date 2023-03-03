@@ -606,7 +606,7 @@ void doit(Client_Info info)
         printf("handle connect\n request to server:\n");
         //cout << request.result << endl;
         handleConnect(request, info.getFD(), info);
-        string sevenlog = info.getUUID() + " Tunnel closed\n";
+        string sevenlog = info.getUUID() + ": Tunnel closed\n";
         log.writeString(sevenlog);
     }
     else{
