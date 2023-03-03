@@ -1,0 +1,260 @@
+0: "GET http://www.columbia.edu/~fdc/sample.html HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:35:16 2023
+Note: enter handleGet, cacheres nullptr
+0: not in cache
+0: Requesting "GET http://www.columbia.edu/~fdc/sample.html HTTP/1.1" from www.columbia.edu
+0: Received "HTTP/1.1 200 OK" from www.columbia.edu
+0: Responding "HTTP/1.1 200 OK"
+0: cached, no expires time
+1: "GET http://www.columbia.edu/~fdc/sample.html HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:35:18 2023
+Note: found in cache
+1: in cache, valid
+1: Responding "HTTP/1.1 200 OK"
+2: "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20no-store HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:35:43 2023
+Note: enter handleGet, cacheres nullptr
+2: not in cache
+2: Requesting "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20no-store HTTP/1.1" from httpbin.org
+2: Received "HTTP/1.1 200 OK" from httpbin.org
+2: Responding "HTTP/1.1 200 OK"
+2: not cacheable because nostore or private response header field
+3: "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20no-store HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:35:47 2023
+Note: enter handleGet, cacheres nullptr
+3: not in cache
+3: Requesting "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20no-store HTTP/1.1" from httpbin.org
+3: Received "HTTP/1.1 200 OK" from httpbin.org
+3: Responding "HTTP/1.1 200 OK"
+3: not cacheable because nostore or private response header field
+4: "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20no-cache HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:35:55 2023
+Note: enter handleGet, cacheres nullptr
+4: not in cache
+4: Requesting "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20no-cache HTTP/1.1" from httpbin.org
+4: Received "HTTP/1.1 200 OK" from httpbin.org
+4: Responding "HTTP/1.1 200 OK"
+4: cached, but requires re-validation5: "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20no-cache HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:35:58 2023
+Note: found in cache
+Note: response has no-cache flag or max-age=0
+5: in cache, requires validation
+5: Responding "HTTP/1.1 200 OK"
+6: "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20private HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:36:07 2023
+Note: enter handleGet, cacheres nullptr
+6: not in cache
+6: Requesting "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20private HTTP/1.1" from httpbin.org
+6: Received "HTTP/1.1 200 OK" from httpbin.org
+6: Responding "HTTP/1.1 200 OK"
+6: not cacheable because nostore or private response header field
+7: "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20private HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:36:11 2023
+Note: enter handleGet, cacheres nullptr
+7: not in cache
+7: Requesting "GET http://httpbin.org/response-headers?freeform=Cache-Control%3A%20private HTTP/1.1" from httpbin.org
+7: Received "HTTP/1.1 200 OK" from httpbin.org
+7: Responding "HTTP/1.1 200 OK"
+7: not cacheable because nostore or private response header field
+8: "GET http://httpbin.org/cache/20 HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:36:19 2023
+Note: enter handleGet, cacheres nullptr
+8: not in cache
+8: Requesting "GET http://httpbin.org/cache/20 HTTP/1.1" from httpbin.org
+8: Received "HTTP/1.1 200 OK" from httpbin.org
+8: Responding "HTTP/1.1 200 OK"
+8: cached, expires at Fri Mar  3 21:36:39 2023
+9: "GET http://httpbin.org/cache/20 HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:36:23 2023
+Note: found in cache
+9: in cache, valid
+9: Responding "HTTP/1.1 200 OK"
+10: "GET http://httpbin.org/cache/20 HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:36:43 2023
+Note: found in cache
+10: in cache, but expired at Fri Mar  3 21:36:39 2023
+10: Requesting GET http://httpbin.org/cache/20 HTTP/1.1 from httpbin.org
+10: Received HTTP/1.1 200 OK from httpbin.org
+10: Responding "HTTP/1.1 200 OK"
+10: cached, expires at Fri Mar  3 21:37:03 2023
+11: "GET http://httpbin.org/response-headers?freeform=Expires%3A%20Fri%2C%2003%20Mar%202023%2021%3A40%3A00%20GMT HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:38:28 2023
+Note: enter handleGet, cacheres nullptr
+11: not in cache
+11: Requesting "GET http://httpbin.org/response-headers?freeform=Expires%3A%20Fri%2C%2003%20Mar%202023%2021%3A40%3A00%20GMT HTTP/1.1" from httpbin.org
+11: Received "HTTP/1.1 200 OK" from httpbin.org
+11: Responding "HTTP/1.1 200 OK"
+11: cached, expires at Fri Mar  3 21:40:00 2023
+12: "GET http://httpbin.org/response-headers?freeform=Expires%3A%20Fri%2C%2003%20Mar%202023%2021%3A40%3A00%20GMT HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:38:38 2023
+Note: found in cache
+12: in cache, valid
+12: Responding "HTTP/1.1 200 OK"
+13: "GET http://httpbin.org/response-headers?freeform=Expires%3A%20Fri%2C%2003%20Mar%202023%2021%3A40%3A00%20GMT HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:39:27 2023
+Note: found in cache
+13: in cache, valid
+13: Responding "HTTP/1.1 200 OK"
+14: "GET http://httpbin.org/response-headers?freeform=Expires%3A%20Fri%2C%2003%20Mar%202023%2021%3A40%3A00%20GMT HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:39:56 2023
+Note: found in cache
+14: in cache, valid
+14: Responding "HTTP/1.1 200 OK"
+15: "GET http://httpbin.org/response-headers?freeform=Expires%3A%20Fri%2C%2003%20Mar%202023%2021%3A40%3A00%20GMT HTTP/1.1" from 172.19.0.1 @ Fri Mar  3 21:40:12 2023
+Note: found in cache
+15: in cache, but expired at Fri Mar  3 21:40:00 2023
+15: Requesting GET http://httpbin.org/response-headers?freeform=Expires%3A%20Fri%2C%2003%20Mar%202023%2021%3A40%3A00%20GMT HTTP/1.1 from httpbin.org
+15: Received HTTP/1.1 200 OK from httpbin.org
+15: Responding "HTTP/1.1 200 OK"
+15: cached, expires at Fri Mar  3 21:40:00 2023
+16: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:41:14 2023
+Note: enter handleGet, cacheres nullptr
+16: not in cache
+16: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+16: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+16: Responding "HTTP/1.1 200 OK"
+16: not cacheable because nostore or private response header field
+17: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:41:49 2023
+Note: enter handleGet, cacheres nullptr
+17: not in cache
+17: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+17: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+18: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:41:50 2023
+Note: enter handleGet, cacheres nullptr
+18: not in cache
+18: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+18: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+17: Responding "HTTP/1.1 200 OK"
+17: not cacheable because nostore or private response header field
+18: Responding "HTTP/1.1 200 OK"
+18: not cacheable because nostore or private response header field
+19: "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:42:24 2023
+Note: enter handleGet, cacheres nullptr
+19: not in cache
+19: Requesting "GET http://www.httpwatch.com/httpgallery/chunked/chunkedimage.aspx HTTP/1.1" from www.httpwatch.com
+19: Received "HTTP/1.1 200 OK" from www.httpwatch.com
+19: Responding "HTTP/1.1 200 OK"
+19: not cacheable because nostore or private response header field
+21: "GET http://httpbin.org/forms/post HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:43:37 2023
+Note: enter handleGet, cacheres nullptr
+21: not in cache
+21: Requesting "GET http://httpbin.org/forms/post HTTP/1.1" from httpbin.org
+21: Received "HTTP/1.1 200 OK" from httpbin.org
+21: Responding "HTTP/1.1 200 OK"
+21: cached, no expires time
+22: "GET http://httpbin.org/favicon.ico HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:43:37 2023
+Note: enter handleGet, cacheres nullptr
+22: not in cache
+22: Requesting "GET http://httpbin.org/favicon.ico HTTP/1.1" from httpbin.org
+22: Received "HTTP/1.1 404 NOT FOUND" from httpbin.org
+22: Responding "HTTP/1.1 404 NOT FOUND"
+22: cached, no expires time
+23: "POST http://httpbin.org/post HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:00 2023
+23: Requesting "POST http://httpbin.org/post HTTP/1.1" from httpbin.org
+23: Received "HTTP/1.1 200 OK" from httpbin.org
+23: Responding "HTTP/1.1 200 OK"
+24: "CONNECT img-getpocket.cdn.mozilla.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:26 2023
+24: Responding "HTTP/1.1 200 OK"
+25: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:27 2023
+26: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:27 2023
+26: Responding "HTTP/1.1 200 OK"
+25: Responding "HTTP/1.1 200 OK"
+27: "CONNECT contile-images.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:27 2023
+27: Responding "HTTP/1.1 200 OK"
+26 Tunnel closed
+28 Tunnel closed
+29: "CONNECT www.youtube.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:28 2023
+29: Responding "HTTP/1.1 200 OK"
+30: "CONNECT incoming.telemetry.mozilla.org:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:29 2023
+30: Responding "HTTP/1.1 200 OK"
+32: "CONNECT i.ytimg.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:29 2023
+32: Responding "HTTP/1.1 200 OK"
+33: "CONNECT accounts.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:29 2023
+33: Responding "HTTP/1.1 200 OK"
+35: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:29 2023
+35: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+35: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+35: Responding "HTTP/1.1 200 OK"
+38: "CONNECT googleads.g.doubleclick.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:32 2023
+38: Responding "HTTP/1.1 200 OK"
+34: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:33 2023
+34: Responding "HTTP/1.1 200 OK"
+34 Tunnel closed
+40: "CONNECT www.gstatic.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:33 2023
+36: "CONNECT www.google.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:33 2023
+40: Responding "HTTP/1.1 200 OK"
+36: Responding "HTTP/1.1 200 OK"
+41: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:34 2023
+42: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:34 2023
+46: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:34 2023
+44: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:34 2023
+45: "CONNECT yt3.ggpht.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:34 2023
+42: Responding "HTTP/1.1 200 OK"
+46: Responding "HTTP/1.1 200 OK"
+44: Responding "HTTP/1.1 200 OK"
+43: Responding "HTTP/1.1 200 OK"
+45: Responding "HTTP/1.1 200 OK"
+42 Tunnel closed
+46 Tunnel closed
+44 Tunnel closed
+43 Tunnel closed
+45 Tunnel closed
+47: "CONNECT static.doubleclick.net:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:35 2023
+48: "CONNECT jnn-pa.googleapis.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:35 2023
+47: Responding "HTTP/1.1 200 OK"
+48: Responding "HTTP/1.1 200 OK"
+50: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:35 2023
+50: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+50: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+50: Responding "HTTP/1.1 200 OK"
+51: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:36 2023
+51: Responding "HTTP/1.1 200 OK"
+54: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:36 2023
+54: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+54: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+54: Responding "HTTP/1.1 200 OK"
+55: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:36 2023
+55: Responding "HTTP/1.1 200 OK"
+58: "CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:37 2023
+59: "CONNECT rr3---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:37 2023
+58: Responding "HTTP/1.1 200 OK"
+59: Responding "HTTP/1.1 200 OK"
+57: "CONNECT tpc.googlesyndication.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:37 2023
+57: Responding "HTTP/1.1 200 OK"
+60: "CONNECT pagead2.googlesyndication.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:37 2023
+60: Responding "HTTP/1.1 200 OK"
+56: "CONNECT rr2---sn-hjoj-jaul.googlevideo.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:37 2023
+56: Responding "HTTP/1.1 200 OK"
+61: "CONNECT yt3.googleusercontent.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:37 2023
+61: Responding "HTTP/1.1 200 OK"
+62: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:38 2023
+62: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+62: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+62: Responding "HTTP/1.1 200 OK"
+63: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:38 2023
+64: "CONNECT fonts.gstatic.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:38 2023
+63: Responding "HTTP/1.1 200 OK"
+64: Responding "HTTP/1.1 200 OK"
+65: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:39 2023
+65: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+66: "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:39 2023
+66: Requesting "POST http://ocsp.pki.goog/gts1c3 HTTP/1.1" from ocsp.pki.goog
+65: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+66: Received "HTTP/1.1 200 OK" from ocsp.pki.goog
+65: Responding "HTTP/1.1 200 OK"
+66: Responding "HTTP/1.1 200 OK"
+64 Tunnel closed
+67: "CONNECT mozilla.cloudflare-dns.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:41 2023
+67: Responding "HTTP/1.1 200 OK"
+68: "CONNECT www.googleadservices.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:47 2023
+68: Responding "HTTP/1.1 200 OK"
+69: "CONNECT firefox.settings.services.mozilla.com:443 HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:44:49 2023
+69: Responding "HTTP/1.1 200 OK"
+56 Tunnel closed
+59 Tunnel closed
+58 Tunnel closed
+70: "GET http://httpbin.org/forms/post HTTP/1.1" from 98.26.35.246 @ Fri Mar  3 21:47:09 2023
+Note: found in cache
+70: in cache, valid
+70: Responding "HTTP/1.1 200 OK"
+27 Tunnel closed
+25 Tunnel closed
+33 Tunnel closed
+38 Tunnel closed
+36 Tunnel closed
+40 Tunnel closed
+47 Tunnel closed
+60 Tunnel closed
+32 Tunnel closed
+30 Tunnel closed
+41 Tunnel closed
+63 Tunnel closed
+24 Tunnel closed
+68 Tunnel closed
+69 Tunnel closed
+29 Tunnel closed
